@@ -1,0 +1,57 @@
+if (2 > 1) {}
+if (2 < 1) {}
+if (2 >= 1) {}
+if (2 <= 1) {}
+if (2 == 1) {}
+if (2 === 1) {}
+if (2 != 1) {}
+if (2 !== 1) {}
+if ('' > '') {} // error
+    ~~~~~~~           [0]
+if ('' < '') {} // error
+    ~~~~~~~           [0]
+if ('' >= '') {} // error
+    ~~~~~~~~           [0]
+if ('' <= '') {} // error
+    ~~~~~~~~           [0]
+if ('' == '') {}
+if ('' === '') {}
+if ('' != '') {}
+if ('' !== '') {}
+if ({} > {}) {} // error
+    ~~~~~~~           [0]
+if ({} < {}) {} // error
+    ~~~~~~~           [0]
+if ({} >= {}) {} // error
+    ~~~~~~~~           [0]
+if ({} <= {}) {} // error
+    ~~~~~~~~           [0]
+if ({} == {}) {} // error
+if ({} === {}) {} // error
+if ({} != {}) {} // error
+if ({} !== {}) {} // error
+if ([] === []) {} // error
+
+type myNumber = number;
+const a1: myNumber = 1
+const a2: myNumber = 2
+
+if (a1 < a2) {}
+
+type myString = string;
+const b1: myString = ''
+const b2: myString = ''
+
+if (b1 === b2) {}
+
+type myObject = Object;
+const c1: myObject = {}
+const c2: myObject = {}
+
+if (c1 === c2) {}
+
+const d1: any = 'string'
+const d2: any = 2
+if (d1 === d2) {}
+
+[0]: Invalid comparison

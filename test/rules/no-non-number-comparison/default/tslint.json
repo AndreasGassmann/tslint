@@ -1,0 +1,5 @@
+{
+    "rules": {
+        "no-non-number-comparison": true
+    }
+}
